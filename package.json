@@ -1,0 +1,19 @@
+{
+  "name": "tp",
+  "version": "1.0.0",
+  "description": "tp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tp"
+  ],
+  "author": "Moi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

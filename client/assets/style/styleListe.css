@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(22, 18, 77);
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin-right: 50px;
+    text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+#introListe{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    margin-left: 20%;
+}
+#introListe p{
+    margin-left: 50%;
+}
+#cartes{
+    width: 30%;
+    float: left;
+}
+.form{
+    background-color: #fff;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;;
+    border: 2px solid gold;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 30%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px lime;
+    text-align: center;
+}
+.cardPerson{
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    margin-left: 30px;
+   
+}
+#liste{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    flex-wrap: wrap;
+}

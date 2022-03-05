@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/styleListe.css">
+    <script type="module" src="../assets/js/script.js"></script>
+    <title>liste des participants</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title"></h1>
+    </header>
+    <div style="display: flex;">
+    <img id="cartes" src="../assets/img/cartes2.png" alt="cartes">
+    <section id="introListe">
+        <h2>Liste des participants</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit unde, deleniti a repellendus doloremque eos sapiente, architecto tempora voluptatibus, nobis fugiat. Odit, praesentium commodi. Aperiam aliquid facere fugit nemo!</span>
+        <div style="display:flex">
+            <form class="form" name="form" action="ajouter" id="form">
+                <h2>Enregistrer un nouveau participant</h2>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Nom du nouveau membre"><br>
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" placeholder="Prénom du nouveau membre"><br>
+                <label for="adherent">Adhérent : </label>
+                <input type="checkbox" id="adherent"><br>
+                <button id="btnAjout">Enregistrer</button>
+            </form>
+           
+            <form  class="form" name="form2" action="modifier" id="form2" style="display:none">
+                <h2>Modifier un nouveau participant</h2>
+                <label for="nom2">Nom :</label>
+                <input type="text" id="nom2" ><br>
+                <label for="prenom2">Prenom :</label>
+                <input type="text" id="prenom2"><br>
+                <label for="adherent2">Adhérent : </label>
+                <input type="checkbox" id="adherent2"><br>
+                <button id="btnValid">Valider</button>
+                <button id="btnDelete">Supprimer</button>
+            </form>
+            </div>
+        </div>
+    </section>
+    </div>
+   
+    <div id="liste">
+       
+    </div>
+    
+</body>
+
+</html>

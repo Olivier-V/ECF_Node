@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    background-image: url(../img/fond.bleu.jpg);
+    background-size: 100%;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+#titleAccueil{
+    color: white;
+    margin-right: 50px;
+    text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime;
+    font-size: 50px;
+    margin-bottom: 0;
+    
+}
+#sectionAccueil{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+#parafAccueil{
+    width: 40%;
+}
+#section2{
+    display: flex;
+    justify-content: space-around;
+}
+#gif{
+    width: 40%;
+}
+#maDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px gold;
+}
+.cardPerson{
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.form{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;;
+    border: 1px lightgray solid;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 30%;
+}
+#labelConnect{
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: blue;
+    text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime; ;
+}
+#inputConnect{
+    width: 400px;
+    height: 80px;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px lime;
+    text-align: center;
+}
+#btnConnect{
+    width: 250px;
+    height: 80px;
+    background-color: gold;
+    border: 2px solid blue;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px lime;
+    margin-top: 60px;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime; ;
+}
