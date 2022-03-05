@@ -5,7 +5,7 @@ document.querySelector("#btnConnect").addEventListener('click', (e) =>{
     let inputConnect = document.querySelector("#inputConnect");
 
     if(inputConnect.value == null || inputConnect.value ==''){
-        alert("Veuillez renseigner votre nom")
+        alert("Veuillez renseigner votre nom afin d'entrer dans l'application")
     }
     else{
         let user = inputConnect.value;

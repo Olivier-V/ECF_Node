@@ -35,15 +35,15 @@ fetch(url, options)
       let nom = document.createElement('h2');
       let statut = document.createElement('p');
       statut.innerHTML = '<p id="statut' + elt.id + '"></p>'
-      nom.innerHTML = '<span class="cardPerson" id="nomPersonne' + elt.id + '">' + elt.name + '</span><span class="cardPerson" id="prenomPersonne' + elt.id + '">' + elt.firstName + '</span>';
+      nom.innerHTML = '<span  id="nomPersonne' + elt.id + '">' + elt.name + '</span><span id="prenomPersonne' + elt.id + '">' + elt.firstName + '</span>';
       let btnModif = document.createElement('span');
       btnModif.innerHTML = '<a href="#form2"><button id="btnModif' + elt.id + '" value=' + elt.id + '>Modifier/Supprimer</button></a>'; //<input id="btnModif'+elt.id+'" type="button" value="Modifier/Supprimer"></input>
 
       if (elt.adherent) {
-        personne.style.backgroundColor = 'lightgreen';
+        personne.style.backgroundColor = 'gold';
         statut.innerText = 'Adherent'
       } else {
-        personne.style.backgroundColor = 'tomato';
+        personne.style.backgroundColor = 'lightgrey';
         statut.innerText = 'Non Adherent'
       }
 
@@ -93,6 +93,8 @@ console.log(newChallenger)
 //Pour modifier / supprimer un membre  
 document.querySelector('#liste').addEventListener('click', (e) => {
   e.preventDefault();
+  window.scrollTo(0,0);
+  document.querySelector("#form").style.display = 'none';
   let myId = Number(e.target.id.split('f')[1]);
   let nomAmodif = listePage[myId - 1].name;
   let prenomAmodif = listePage[myId - 1].firstName;
