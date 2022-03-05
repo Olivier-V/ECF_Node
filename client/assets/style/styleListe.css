@@ -38,6 +38,26 @@ header{
     box-shadow: 2px 2px 2px 1px lime;
     text-align: center;
 }
+#easterEgg{
+    background-color: rgb(22, 18, 77);
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#cache{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 270px;
+    height: 280px;
+}
+#cache:hover{
+    opacity: 0;
+}
+#gif{
+    border-radius: 25px;
+}
 .cardPerson{
     border-radius: 25px;
     padding: 20px;
