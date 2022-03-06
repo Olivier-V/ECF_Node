@@ -35,9 +35,7 @@ app.put('/liste', (req,res)=>{
 })
 
 app.delete('/liste' , (req ,res)=>{
-    //delete Liste[Number(req.body.id)-1];
-    console.log(Number(req.body.id)-1);
-    Liste.splice(Number(req.body.id)-1 , 1);
-    console.log(Liste);
-    res.send(Liste);
+        Liste.splice(Number(req.body.id)-1 , 1);
+        console.log(Liste);
+        res.send(Liste);
 })

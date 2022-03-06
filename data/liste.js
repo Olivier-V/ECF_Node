@@ -6,7 +6,7 @@ const srcListe = [
       adherent: true
     }, {
       id: 2,
-      name: 'Prevot',
+      name: 'Prevut',
       firstName: 'Lulu',
       adherent: false
     }, {
@@ -27,12 +27,12 @@ const srcListe = [
     }, {
       id: 6,
       name: 'Patrick',
-      firstName: 'Communik',
+      firstName: 'Ethnik',
       adherent: true
     }, {
       id: 7,
       name: 'Ayamohoto',
-      firstName: 'Chimouki',
+      firstName: 'Chimouko',
       adherent: true
     }, {
       id: 8,
@@ -41,7 +41,7 @@ const srcListe = [
       adherent: false
     }, {
       id: 9,
-      name: 'Dear',
+      name: 'Derique',
       firstName: 'Monique',
       adherent: true
     }

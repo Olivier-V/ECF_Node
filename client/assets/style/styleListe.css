@@ -3,12 +3,15 @@ body{
 }
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     color: white;
     margin-right: 50px;
     text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime;
     font-size: 30px;
     margin-bottom: 0;
+}
+#txtAccueil{
+    display: in;
 }
 #introListe{
     display: flex;
@@ -22,8 +25,7 @@ header{
     margin-left: 50%;
 }
 #cartes{
-    width: 30%;
-    float: left;
+    width: 100%;
 }
 .form{
     background-color: lightgrey;
@@ -41,7 +43,7 @@ header{
 #easterEgg{
     background-color: rgb(22, 18, 77);
     position: relative;
-    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
 }
 #cache{

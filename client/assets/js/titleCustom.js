@@ -1,3 +1,3 @@
-//Affichage du titre personnalisé
+//Affichage du post-it personnalisé
 export let user = sessionStorage.getItem("user");
-document.querySelector("#title").innerText = 'Bienvenue ' + user;
+document.querySelector("#txtAccueil").innerHTML = '<p>Bienvenue '+user+'<p>';

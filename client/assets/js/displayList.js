@@ -1,3 +1,5 @@
+//Module permettant l'affichage de l'ensemble des membres
+
 let myHeader = new Headers();
 let url = '/liste';
 let options = {
@@ -10,7 +12,7 @@ let containerListe = document.querySelector('#liste');
 let length;
 var listePage;
 
-//Requete permettant l'affichage de l'ensemble des membres
+
 fetch(url, options)
   .then((res) => {
     if (res.ok) {

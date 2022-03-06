@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-image: url(../img/fond.bleu.jpg);
     background-size: 100%;
+    position: relative;
 }
 header{
     display: flex;
@@ -81,4 +82,39 @@ header{
     font-size: 40px;
     color: blue;
     text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em lime; ;
+}
+.horloge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 10px 10px 10px lime;
+}
+
+.heures{
+    width: 200px;
+    font-size:25pxpx;
+    font-family: 'Cinzel','Orbitron', sans-serif;
+    font-weight: 300px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(10,10,10,0.2);
+    text-align: end;
+}
+
+.date{
+    font-size: 25px;
+    font-family: 'Cinzel','Nunito Sans', sans-serif;
+    padding-top: 10px;
+    text-shadow: 10px 10px 10px lime;
+}
+#meteoMetz{
+    color: white;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Cinzel','Nunito Sans', sans-serif;
+    text-shadow: 10px 10px 10px lime;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
 }
