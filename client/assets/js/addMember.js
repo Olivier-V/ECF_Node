@@ -1,25 +1,25 @@
 //Pour ajouter un membre
 import { Person } from "./person.class.js";
-let length;
-let myHeader = new Headers();
-let url = '/liste';
-let options = {
-  method: 'GET',
-  header: myHeader,
-  mode: 'cors',
-  cache: 'default'
-};
-var listePage;
-fetch(url, options)
-  .then((res) => {
-    if (res.ok) {
-      return res.json();
-    }
-  })
-  .then((response) => {
-    length = (response.length + 1);
-    listePage = response;
-  });
+ let length;
+ let myHeader = new Headers();
+ let url = '/liste';
+ let options = {
+   method: 'GET',
+   header: myHeader,
+   mode: 'cors',
+   cache: 'default'
+ };
+ var listePage;
+ fetch(url, options)
+   .then((res) => {
+     if (res.ok) {
+       return res.json();
+     }
+   })
+   .then((response) => {
+     length = (response.length + 1);
+     listePage = response;
+   });
 
 document.querySelector('#btnAjout').addEventListener('click', (e) => {
     e.preventDefault();

@@ -1,4 +1,4 @@
-//Tuto réalisé le 29 février (pour les valeurs exemples en commentaire)
+//Pour afficher la date et l'heure
 
 var heuresDiv = document.querySelector('.heures');
 var dateDiv = document.querySelector('.date');
