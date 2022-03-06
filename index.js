@@ -35,7 +35,15 @@ app.put('/liste', (req,res)=>{
 })
 
 app.delete('/liste' , (req ,res)=>{
-        Liste.splice(Number(req.body.id)-1 , 1);
+        //Liste.splice(Number(req.body.id)-1 , 1);
+        let myId = Number(req.body.id);
+        let i=0;
+        Liste.forEach( elt =>{
+            if (elt.id == myId){
+                Liste.splice(i,1);
+            }
+            i++;
+        })
         console.log(Liste);
         res.send(Liste);
 })

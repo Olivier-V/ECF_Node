@@ -26,12 +26,26 @@ document.querySelector('#liste').addEventListener('click', (e) => {
   window.scrollTo(0, 0);
   document.querySelector("#form").style.display = 'none';
   let myId = Number(e.target.id.split('f')[1]);
-
+  console.log(listePage);
   console.log(myId);
-
-  let nomAmodif = listePage[myId - 1].name;
-  let prenomAmodif = listePage[myId - 1].firstName;
-  let adherentAmodifier = listePage[myId - 1].adherent;
+  let nomAmodif; //= listePage[myId - 1].name;
+  listePage.forEach(element => {
+    if(element.id == myId){
+      nomAmodif = element.name;
+    }
+  });
+  let prenomAmodif;// = listePage[myId - 1].firstName;
+  listePage.forEach(element => {
+    if(element.id == myId){
+      prenomAmodif = element.firstName;
+    }
+  });
+  let adherentAmodifier;// = listePage[myId - 1].adherent;
+  listePage.forEach(element => {
+    if(element.id == myId){
+      adherentAmodifier = element.adherent;
+    }
+  });
 
   document.querySelector("#form2").style.display = 'block';
   document.querySelector('#nom2').value = nomAmodif;
@@ -73,7 +87,6 @@ document.querySelector('#liste').addEventListener('click', (e) => {
   document.querySelector("#btnDelete").addEventListener('click', (e) => {
     if (confirm("Souhaitez vous vraiment supprimer cet élément?")) {
       e.preventDefault();
-      console.log("ca efface")
       let objToDel = {
         id: myId
       }
